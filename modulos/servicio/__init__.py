@@ -3,7 +3,7 @@ import requests
 from django.conf import settings
 from modulos.servicio.exceptions import ServicioException
 
-TOKEN = getattr(settings, 'SERVICIO_TOKEN', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhNzAzYTlhZjcxZDY0NDMzOWJiNDM3ODEyYjIwODY0MyJ9.KAXS_8G3BznwFBR0dLZHfVQc2LkZI5fiTK6TN-meAZ4')
+TOKEN = getattr(settings, 'SERVICIO_TOKEN', 'mi_token')
 
 class BaseResponse(object):
     def __init__(self, is_valid, message, code, message_type, data):
